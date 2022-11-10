@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- shift + alt + A : phím tắt commont trên vscode -->
+    <ul>
+        <li><img src="../img/images.jpg" onclick="changeImage('one')" id="one" ialt=""></li>
+        <li><img src="../img/images (1).jpg" onclick="changeImage('two')" id="two" alt=""></li>       
+        <li><img src="../img/images (2).jpg" onclick="changeImage('three')" id="three" alt=""></li>
+        <li><img src="../img/images (3).jpg" onclick="changeImage('four')" id="four" alt=""></li>
+    </ul>
+    <div class="main-image">
+        <img src="../img/images.jpg" id="img-main" alt="">
+       
+    </div>
+
+    <script>
+        function changeImage(id){
+            let image = document.getElementById(id).getAttribute('src')
+            document.getElementById('img-main').setAttribute('src',image)
+            
+        }
+    </script>
+    
+    
+</body>
+</html>

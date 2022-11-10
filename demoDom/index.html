@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="makeRedColor()">Red</button>
+    <button onclick="makeYellowColor()">Yellow</button>
+    <button onclick="makeGreenColor()">Green</button>
+    <button onclick="changetest()">Change test</button>
+    <button onclick="resetText()">reset</button>
+    <div id="content">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Doloribus itaque nisi debitis excepturi! Eaque quaerat,
+        nostrum eos suscipit necessitatibus iure dolorum quo
+        deserunt quod quas aliquid animi totam voluptatem? Recusandae.
+    </div>
+    <script>
+        function makeRedColor() {
+            document.getElementById('content').style.color = 'red';
+        }
+        function makeYellowColor() {
+            document.getElementById('content').style.color = 'yellow';
+        }
+        function makeGreenColor() {
+            document.getElementById('content').style.color = 'green';
+        }
+        function resetText() {
+            document.getElementById('content').style.color = 'black';
+            document.getElementById('content').innerHTML = 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.Doloribus itaque nisi debitis excepturi! Eaque quaerat,nostrum eos suscipit necessitatibus iure dolorum quo deserunt quod quas aliquid animi totam voluptatem? Recusandae.';
+        }
+        function changetest() {
+            document.getElementById('content').innerHTML = 'Chào mấy em';
+        }
+    </script>
+    <!-- <div id="dongho" </div>-->
+    <!-- #dongho{    
+    width: 300px;
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: brown;
+    } -->
+    <!-- function LayThoiGian(){
+    var d = new  Date();
+    return d.getHours()+" : "+d.getMinutes()+" : "+d.getSeconds();
+}
+function CapNhatThoiGian(){
+    document.getElementById('dongho').innerHTML= LayThoiGian();
+    window.setTimeout('CapNhatThoiGian()' , 1);
+}
+CapNhatThoiGian();
+ -->
+
+</body>
+
+</html>

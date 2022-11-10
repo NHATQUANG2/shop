@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+ul, .main-image{
+    float: left;
+}
+ul li{
+    list-style: none;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+ul li img{
+    width: 100px;
+    cursor: pointer;    /* làm cho có bàn tay trên thứ gì đó */
+}
+.main-image{
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin: 21px;
+}
+.main-image img{
+    width: 400px;
+    height: 433px;
+    
+}
